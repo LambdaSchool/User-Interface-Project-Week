@@ -1,1 +1,919 @@
-/* Should be empty until you compile your LESS */
+/*------------------------------------*\
+RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0b1 | 201101
+NOTE:WORK IN PROGRESS
+USE WITH CAUTION AND TEST WITH ABANDON */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.general-font-style {
+  background: #FFFFFF;
+  color: #222222;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #FFFFFF;
+  color: #222222;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  display: flex;
+}
+.container {
+  max-width: 855px;
+  margin: auto;
+}
+.dropdown {
+  max-width: 100%;
+  width: 100%;
+}
+.dropdown .overlay {
+  background: #9da7b1;
+  width: 1025px;
+  height: 600px;
+  position: fixed;
+  opacity: 0.95;
+  overflow: visible;
+  z-index: 50;
+  display: none;
+}
+.dropdown .overlay h1 {
+  color: #FFFFFF;
+  margin-left: 8.5%;
+  margin-top: 2.5%;
+  font-size: 2.4rem;
+}
+.dropdown .overlay .overlay-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 50;
+}
+.dropdown .overlay .overlay-content nav {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown .overlay .overlay-content nav a {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 85px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.dropdown .overlay .overlay-content nav a:hover {
+  color: #222222;
+}
+.dropdown .overlay .close-btn {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 13px;
+  right: 85px;
+  border: none;
+  background-color: Transparent;
+  color: white;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.dropdown .navigation {
+  position: fixed;
+  top: 0;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+.dropdown .navigation h1 {
+  color: #FFFFFF;
+  font-size: 2.6rem;
+  margin-left: 9.1%;
+  margin-bottom: 1%;
+}
+.dropdown .navigation .hamburger {
+  margin-right: 8.5%;
+}
+.dropdown .navigation-clear {
+  background-color: Transparent;
+}
+.dropdown .navigation-bg {
+  background-color: #9DA7B1;
+  opacity: 0.95;
+  z-index: 9;
+}
+@media (max-width: 960px) {
+  .dropdown {
+    max-width: 960px;
+  }
+  .dropdown .navigation {
+    max-width: 960px;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .dropdown {
+    max-width: 400px;
+    width: 100%;
+  }
+  .dropdown .overlay {
+    max-width: 400px;
+    width: 100%;
+    height: 400px;
+  }
+  .dropdown .overlay h1 {
+    margin-top: 26px;
+  }
+  .dropdown .overlay .close-btn {
+    right: 25px;
+  }
+  .dropdown .navigation {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+.footer {
+  background-color: #828282;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+}
+.footer .footer-top {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer .footer-top .form-group {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-top .form-group label {
+  font-size: 2rem;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.footer .footer-top .form-group input {
+  height: 40px;
+  width: 90%;
+  border-radius: 10px;
+}
+.footer .footer-top .form-group p {
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  margin-top: -20px;
+}
+.footer .footer-top .location {
+  color: #FFFFFF;
+  line-height: 27px;
+}
+.footer .footer-top .location h2 {
+  font-size: 2.2rem;
+}
+.footer .footer-top .location p {
+  font-size: 1.4rem;
+}
+.footer .footer-bottom {
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+@media (max-width: 650px) {
+  .footer {
+    max-width: 650px;
+    width: 100%;
+    height: 700px;
+  }
+  .footer .footer-top {
+    flex-direction: column;
+    margin-top: 0px;
+    height: 700px;
+  }
+  .footer .footer-top .form-group {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer .footer-top .location {
+    margin-left: 20%;
+  }
+}
+@media (max-width: 400px) {
+  .footer {
+    max-width: 400px;
+    height: 700px;
+    width: 100%;
+  }
+  .footer .footer-top {
+    margin-top: 0px;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 5%;
+    height: 700px;
+  }
+  .footer .footer-top .form-group {
+    width: 90%;
+  }
+}
+.home {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+.jumbo-home {
+  max-width: 1024px;
+  width: 100%;
+  height: 598px;
+  margin: 0 auto;
+  background: url('../img/home/home-jumbotron.png');
+  background-size: contain;
+}
+.jumbo-home .container {
+  height: 100%:
+    position: relative;
+}
+.jumbo-home .container h1 {
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 7.5rem;
+  color: #FFFFFF;
+  position: relative;
+  top: 250px;
+}
+.top-content .top-content-block {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 55px;
+  width: 85%;
+}
+.top-content .top-content-block:nth-child(2) {
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+.top-content .top-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 25px 2% 0px;
+}
+.top-content .top-content-text h2 {
+  color: #222222;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.top-content .top-content-text button {
+  border: 1px double black;
+  font-size: 1.6rem;
+  background: white;
+  width: 30%;
+  height: 45px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.bottom-content {
+  width: 85%;
+  margin: 0 auto;
+}
+.bottom-content h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.bottom-content .bottom-content-block h1 {
+  display: inline;
+  position: relative;
+  margin-left: 60%;
+  margin-top: -60px;
+  z-index: 1;
+  font-size: 2.4rem;
+  letter-spacing: .8rem;
+  width: 30%;
+  height: 85px;
+  background-color: #D8D8D8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-content .bottom-content-block .bottom-content-text {
+  font-size: 1.7rem;
+  word-spacing: 5px;
+  line-height: 25px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 53%;
+}
+.bottom-content .bottom-content-block:nth-child(3) h1 {
+  margin-left: 8%;
+}
+@media (max-width: 1000px) {
+  .home {
+    max-width: 900px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .home .jumbo-home {
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+  }
+  .home .jumbo-home .container h1 {
+    top: 150px;
+    left: 5%;
+  }
+  .home .top-content {
+    margin-top: 0px;
+  }
+  .home .top-content-block {
+    max-width: 900px;
+    width: 100%;
+  }
+  .home .bottom-content {
+    max-width: 900px;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .home {
+    max-width: 400px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .home .jumbo-home {
+    background: url('../img/home/home-mobile-jumbotron.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 270px;
+  }
+  .home .jumbo-home .container {
+    position: relative;
+    left: 5%;
+    bottom: 120px;
+  }
+  .home .jumbo-home .container h1 {
+    font-size: 3rem;
+    line-height: 40px;
+    letter-spacing: .3rem;
+    top: 240px;
+  }
+  .top-content {
+    max-width: 400px;
+  }
+  .top-content .top-content-block {
+    background: url('../img/home/home-mobile-img-1.png');
+    background-repeat: no-repeat;
+    max-width: 100%;
+    margin-left: 5%;
+  }
+  .top-content .top-content-block img {
+    display: none;
+  }
+  .top-content .top-content-block:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: url('../img/home/home-mobile-img-2.png');
+    background-repeat: no-repeat;
+  }
+  .top-content .top-content-text {
+    background: white;
+    margin-top: 250px;
+    padding-right: 15%;
+  }
+  .top-content .top-content-text p {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .top-content .top-content-text button {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 100%;
+  }
+  .bottom-content {
+    max-width: 400px;
+    width: 90%;
+  }
+  .bottom-content h2 {
+    margin-bottom: 80px;
+  }
+  .bottom-content .bottom-content-block {
+    background: url('../img/home/home-mobile-villas-img.png');
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 500px;
+    margin-left: 1.5%;
+  }
+  .bottom-content .bottom-content-block h1 {
+    display: inline;
+    position: relative;
+    margin-left: 8%;
+    top: 180px;
+    font-size: 2.4rem;
+    letter-spacing: .8rem;
+    width: 80%;
+    height: 85px;
+    background-color: #D8D8D8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+  }
+  .bottom-content .bottom-content-block img {
+    display: none;
+  }
+  .bottom-content .bottom-content-block .bottom-content-text {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 100%;
+  }
+  .bottom-content .bottom-content-block .bottom-content-text p {
+    margin-bottom: 20px;
+  }
+  .bottom-content .bottom-content-block:nth-child(3) {
+    background: url('../img/home/home-mobile-outskirts-img.png');
+    background-repeat: no-repeat;
+  }
+  .bottom-content .bottom-content-block:nth-child(3) h1 {
+    margin-left: 0 auto;
+  }
+  .bottom-content .bottom-content-block:nth-child(4) {
+    background: url('../img/home/home-mobile-the-blocks-img.png');
+    background-repeat: no-repeat;
+  }
+  .bottom-content .bottom-content-block:nth-child(4) h1 {
+    margin-right: 0 auto;
+  }
+}
+.services {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+.services .jumbo-services {
+  max-width: 1024px;
+  width: 100%;
+  height: 240px;
+  margin: 0 auto;
+  background: url('../img/services/services-jumbotron.png');
+}
+.services .jumbo-services .container {
+  height: 100%:
+      position: relative;
+}
+.services .jumbo-services .container h1 {
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 7.5rem;
+  color: #FFFFFF;
+  position: relative;
+  top: 140px;
+}
+.services .main-section {
+  width: 85%;
+  margin: 0 auto;
+}
+.services .main-section h3 {
+  line-height: 30px;
+  margin-top: 50px;
+}
+.services .main-section .tabs .tabs-items {
+  width: 100%;
+}
+.services .main-section .tabs .tabs-items .tabs-item {
+  display: none;
+  width: 80%;
+}
+.services .main-section .tabs .tabs-items .tabs-item-selected {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+.services .main-section .tabs .tabs-items .tabs-item-selected .tabs-item-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-top: 50px;
+}
+.services .main-section .tabs .tabs-items .tabs-item-selected .tabs-item-description {
+  display: flex;
+  justify-content: space-between;
+}
+.services .main-section .tabs .tabs-items .tabs-item-selected .tabs-item-description .tabs-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 420px;
+  height: 320px;
+}
+.services .main-section .tabs .tabs-items .tabs-item-selected .tabs-item-description .tabs-item-text p {
+  line-height: 27px;
+  margin-top: 0px;
+}
+.services .main-section .tabs .tabs-items .tabs-item-selected .tabs-item-description .services-desktop {
+  display: block;
+}
+.services .main-section .tabs .tabs-items .tabs-item-selected .tabs-item-description .services-mobile {
+  display: none;
+}
+@media (max-width: 400px) {
+  .services .main-section .tabs .tabs-items .tabs-item-selected .tabs-item-description .services-desktop {
+    display: none;
+  }
+  .services .main-section .tabs .tabs-items .tabs-item-selected .tabs-item-description .services-mobile {
+    display: block;
+  }
+}
+.services .main-section .tabs-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.services .main-section .tabs-links .tabs-link {
+  border: 1px solid black;
+  height: 48px;
+  width: 22%;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .main-section .tabs-links .tabs-link:hover {
+  background-color: #222222;
+  color: #FFFFFF;
+}
+.services .main-section .tabs-links .tabs-link-selected {
+  background-color: #5E9FB9;
+  color: #FFFFFF;
+}
+.services .footer .footer-top .form-group p {
+  margin-top: 0px;
+}
+@media (max-width: 400px) {
+  .services {
+    max-width: 400px;
+    overflow-x: hidden;
+  }
+  .services .jumbo-services {
+    background: url('../img/services/services-mobile-jumbotron.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 250px;
+  }
+  .services .jumbo-services .container {
+    postion: relative;
+  }
+  .services .jumbo-services .container h1 {
+    font-size: 3.6rem;
+    top: 170px;
+    left: 20px;
+  }
+  .services .main-section {
+    max-width: 400px;
+  }
+  .services .main-section h3 {
+    margin-top: 30px;
+    line-height: 26px;
+  }
+  .services .main-section .tabs {
+    max-width: 400px;
+  }
+  .services .main-section .tabs .tabs-item-selected {
+    height: 800px;
+  }
+  .services .main-section .tabs .tabs-item-selected .tabs-item-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  .services .main-section .tabs .tabs-item-selected .tabs-item-description {
+    flex-direction: column;
+    max-width: 400px;
+  }
+  .services .main-section .tabs .tabs-item-selected .tabs-item-description .tabs-item-text {
+    max-width: 400px;
+    margin-top: 200px;
+    justify-content: space-between;
+  }
+  .services .main-section .tabs .tabs-item-selected .tabs-item-description .tabs-item-text p {
+    width: 300px;
+  }
+  .services .main-section .tabs .tabs-item-selected .tabs-item-description .tabs-item-text p:nth-child(2) {
+    margin-top: 30px;
+  }
+  .services .main-section .tabs .tabs-item-selected .tabs-item-description img {
+    margin-top: 240px;
+  }
+  .services .main-section .tabs .tabs-links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    height: 260px;
+  }
+  .services .main-section .tabs .tabs-links .tabs-link {
+    width: 90%;
+  }
+  .services .footer {
+    margin-top: 500px;
+  }
+}
+.contact {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+.contact .jumbo-contact {
+  max-width: 1024px;
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+  background: url('../img/contact/contact-jumbotron.png');
+}
+.contact .jumbo-contact .container {
+  height: 100%:
+      position: relative;
+}
+.contact .jumbo-contact .container h1 {
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 7.5rem;
+  color: #FFFFFF;
+  position: relative;
+  top: 150px;
+}
+.contact .main-content {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+.contact .main-content .form h1 {
+  margin-bottom: 25px;
+}
+.contact .main-content .form #exampleFormControlInput1 {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  height: 40px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.contact .main-content .form #exampleFormControlSelect1 {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  height: 40px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.contact .main-content .form .form-group {
+  display: flex;
+  flex-flow: column;
+  height: 120px;
+  line-height: 30px;
+}
+.contact .main-content .form p {
+  font-size: 1.3rem;
+  color: #222222;
+  margin-top: -10px;
+}
+.contact .main-content .form button {
+  border: 1px double black;
+  font-size: 1.6rem;
+  background: white;
+  width: 35%;
+  height: 45px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.contact .main-content .form .radios {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contact .main-content h1 {
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+.contact .main-content h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 30px;
+}
+.contact .main-content p {
+  line-height: 30px;
+}
+@media (max-width: 960px) {
+  .contact {
+    max-width: 960px;
+    width: 100%;
+  }
+  .contact .main-content {
+    max-width: 900;
+    width: 80%;
+  }
+  .contact .main-content .form {
+    max-width: 300px;
+    width: 70%;
+    margin-right: 10%;
+  }
+}
+@media (max-width: 550px) {
+  .contact {
+    max-width: 550px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .contact .jumbo-contact {
+    background: url('../img/contact/contact-mobile-jumbotron.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 270px;
+  }
+  .contact .jumbo-contact .container {
+    position: relative;
+    top: 50px;
+    left: 5%;
+  }
+  .contact .jumbo-contact .container h1 {
+    font-size: 3rem;
+    line-height: 40px;
+    letter-spacing: .3rem;
+  }
+  .contact .main-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    width: 100%;
+  }
+  .contact .main-content form {
+    width: 120%;
+  }
+  .contact .main-content form button {
+    height: 100%;
+    width: 60%;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 30%;
+  }
+  .contact .main-content form #exampleFormControlInput1 {
+    width: 100%;
+    height: 40px;
+  }
+  .contact .main-content form #exampleFormControlSelect1.form-control {
+    width: 100%;
+  }
+}

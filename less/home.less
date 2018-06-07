@@ -1,0 +1,245 @@
+.home {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.jumbo-home {
+  max-width: 1024px;
+  width: 100%;
+  height: 598px;
+  margin: 0 auto;
+  background: url('../img/home/home-jumbotron.png');
+  background-size: contain;
+  .container {
+    height: 100%:
+    position: relative;
+    h1 {
+      font-weight: 700;
+      font-size: 6.4rem;
+      line-height: 7.5rem;
+      color: @white;
+      position: relative;
+      top: 250px;
+    }
+  }
+}
+
+.top-content {
+  .top-content-block {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 55px;
+    width: 85%;
+   }
+  .top-content-block:nth-child(2) {
+    margin-top: 90px;
+    margin-bottom: 100px;
+  }
+  .top-content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 25px 2% 0px;
+    h2 {
+      color: @offblack;
+      font-size: 2.4rem;
+      font-weight: bold;
+    }
+    button {
+      border: 1px double black;
+      font-size: 1.6rem;
+      background: white;
+      width: 30%;
+      height: 45px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.bottom-content {
+  width: 85%;
+  margin: 0 auto;
+  h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  .bottom-content-block {
+    h1 {
+      display: inline;
+      position: relative;
+      margin-left: 60%;
+      margin-top: -60px;
+      z-index: 1;
+      font-size: 2.4rem;
+      letter-spacing: .8rem;
+      width: 30%;
+      height: 85px;
+      background-color: @graysquare;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .bottom-content-text {
+      font-size: 1.7rem;
+      word-spacing: 5px;
+      line-height: 25px;
+      margin: 0 auto;
+      margin-top: 80px;
+      margin-bottom: 100px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 53%;
+    }
+  }
+  .bottom-content-block:nth-child(3) {
+    h1 {
+      margin-left: 8%;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .home {
+    max-width: 900px;
+    width: 100%;
+    overflow-x: hidden;
+    .jumbo-home {
+      background-repeat: no-repeat;
+      margin-bottom: 0px;
+      .container {
+        h1 {
+          top: 150px;
+          left: 5%;
+        }
+      }
+    }
+    .top-content {
+      margin-top: 0px;
+    }
+    .top-content-block {
+      max-width: 900px;
+      width: 100%;
+    }
+    .bottom-content {
+      max-width: 900px;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .home {
+    max-width: 400px;
+    width: 100%;
+    overflow-x: hidden;
+  .jumbo-home {
+    background: url('../img/home/home-mobile-jumbotron.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 270px;
+    .container {
+      position: relative;
+      left: 5%;
+      bottom: 120px;
+      h1 {
+        font-size: 3rem;
+        line-height: 40px;
+        letter-spacing: .3rem;
+        top: 240px;
+    }
+  }
+}
+}
+
+  .top-content {
+    max-width: 400px;
+    .top-content-block {
+      background: url('../img/home/home-mobile-img-1.png');
+      background-repeat: no-repeat;
+      max-width: 100%;
+      margin-left: 5%;
+      img {
+        display: none;
+      }
+    }
+      .top-content-block:nth-child(2) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background: url('../img/home/home-mobile-img-2.png');
+        background-repeat: no-repeat;
+      }
+    .top-content-text {
+      background: white;
+      margin-top: 250px;
+      padding-right: 15%;
+      p {
+        margin-top: 20px;
+        width: 100%;
+      }
+      button {
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 100%;
+      }
+    }
+    }
+
+    .bottom-content {
+      max-width: 400px;
+      width: 90%;
+      h2 {
+        margin-bottom: 80px;
+      }
+      .bottom-content-block {
+        background: url('../img/home/home-mobile-villas-img.png');
+        background-repeat: no-repeat;
+        height: 300px;
+        margin-bottom: 500px;
+        margin-left: 1.5%;
+        h1 {
+          display: inline;
+          position: relative;
+          margin-left: 8%;
+          top: 180px;
+          font-size: 2.4rem;
+          letter-spacing: .8rem;
+          width: 80%;
+          height: 85px;
+          background-color: @graysquare;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 200px;
+        }
+        img {
+          display: none;
+        }
+        .bottom-content-text {
+          margin: 0 auto;
+          margin-top: 100px;
+          width: 100%;
+          p {
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .bottom-content-block:nth-child(3) {
+        background: url('../img/home/home-mobile-outskirts-img.png');
+        background-repeat: no-repeat;
+        h1 {
+          margin-left: 0 auto;
+        }
+      }
+      .bottom-content-block:nth-child(4) {
+        background: url('../img/home/home-mobile-the-blocks-img.png');
+        background-repeat: no-repeat;
+        h1 {
+          margin-right: 0 auto;
+        }
+      }
+    }
+  }

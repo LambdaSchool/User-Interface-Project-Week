@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>Contact Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -10,51 +12,129 @@
 </head>
 
 <body>
+	<div class="container contact">
 
-	<h1>Contact</h1>
+	<div class="jumbo-contact">
+		<div class="dropdown">
+			<div class="overlay">
+				<h1>S&amp;J</h1>
+		<div class="overlay-content">
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="services.html">Services</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
 
-<!-- Contactd Us Content 
-  Contact Us
-  
-Get In Touch
+		<button class="close-btn">X</button>
+		</div>
+			<div class="navigation">
+					<h1>S&amp;J</h1>
+					<div class="hamburger">
+						<img class = "dropdown-button" src="img/nav-hamburger.png" alt="Navigation hamburger">
+					</div>
+			</div>
+		</div>
+	  <div class = "container">
+			<h1>Contact Us</h1>
+		</div>
+	</div>
 
-Email Address
-Enter Email
-We'll never share your email with anyone else.
+		<div class="main-content">
+			<div class="form">
+				<h1>Get in Touch</h1>
+				<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter email">
+		<p>We'll never share your email with anyone else.</p>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">How many buildings do you need planned</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Please provide a brief overview of your project needs:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+  </div>
+	<div class="radios">
+		<input type="radio" name="group2" value="business" checked>I am a small business<br>
+		<input type="radio" name="group2" value="residential">I am a residential owner<br>
+		<input type="radio" name="group2" value="corporate">I am a corporation<br>
+	</div>
+	<button type="button" name="Submit">Submit</button>
+</form>
+			</div>
+			<div class="locations">
+				<h1>Where We Work</h1>
+				<div class="location">
+					<h2>New York</h2>
+					<p>123 Lane</p>
+					<p>Suite 100</p>
+					<p>Albany, NY 12345</p>
+					<p>202 555 0144</p>
+				</div>
+				<div class="location">
+					<h2>Florida</h2>
+					<p>Ocean Drive</p>
+					<p>Suite 201</p>
+					<p>Orlando, FL 22345</p>
+					<p>502 555 0144</p>
+				</div>
+				<div class="location">
+					<h2>California</h2>
+					<p>Mountain Street</p>
+					<p>Suite 105</p>
+					<p>San Diego, CA 22345</p>
+					<p>702 555 0144</p>
+				</div>
+			</div>
+		</div>
 
-How many buildings do you need planned?
-1-5
+		<div class="footer">
+			<div class="footer-top">
+				<form>
+		  <div class="form-group">
+		  	<label for="exampleInputEmail1">Interested in starting a project? Let's talk:</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="   Enter email"><br>
+		    <p>We'll never share your email with anyone else.</p>
+		  </div>
+		</form>
+				<div class="location">
+					<h2>New York</h2>
+					<p>123 Lane</p>
+					<p>Suite 100</p>
+					<p>Albany, NY 12345</p>
+					<p>202 555 0144</p>
+				</div>
+				<div class="location">
+					<h2>Florida</h2>
+					<p>Ocean Drive</p>
+					<p>Suite 201</p>
+					<p>Orlando, FL 22345</p>
+					<p>502 555 0144</p>
+				</div>
+				<div class="location">
+					<h2>California</h2>
+					<p>Mountain Street</p>
+					<p>Suite 105</p>
+					<p>San Diego, CA 22345</p>
+					<p>702 555 0144</p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>Copyright © 2018 Smith and Jones</p>
+			</div>
+			</div>
+	</div>
 
-Provide a brief overview of your project needs:
 
-I am a small business
-I am a residential owner
-I am a corporation
-
-Submit
-
-Where We Work
-
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
-
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
-
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
-
--->
-
-	<script src="index.js"></script>
+	<script src="js/index.js"></script>
 </body>
 </html>

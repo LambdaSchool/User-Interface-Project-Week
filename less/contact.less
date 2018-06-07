@@ -1,0 +1,166 @@
+.contact {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  .jumbo-contact {
+    max-width: 1024px;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    background: url('../img/contact/contact-jumbotron.png');
+    .container {
+      height: 100%:
+      position: relative;
+      h1 {
+        font-weight: 700;
+        font-size: 6.4rem;
+        line-height: 7.5rem;
+        color: @white;
+        position: relative;
+        top: 150px;
+      }
+    }
+  }
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    .form {
+      h1 {
+        margin-bottom: 25px;
+      }
+      #exampleFormControlInput1 {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      height: 40px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      font-size: 1.6rem;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+      #exampleFormControlSelect1 {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        height: 40px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        font-size: 1.6rem;
+        border-radius: 3px;
+        box-sizing: border-box;
+      }
+      .form-group {
+        display: flex;
+        flex-flow: column;
+        height: 120px;
+        line-height: 30px;
+}
+        p {
+          font-size: 1.3rem;
+          color: @offblack;
+          margin-top: -10px;
+        }
+      button {
+        border: 1px double black;
+        font-size: 1.6rem;
+        background: white;
+        width: 35%;
+        height: 45px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      .radios {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    h1 {
+      font-weight: bold;
+      font-size: 2.4rem;
+    }
+    h2 {
+      font-weight: bold;
+      font-size: 2rem;
+      margin-top: 30px;
+    }
+    p {
+      line-height: 30px;
+    }
+  }
+}
+@media (max-width: 960px) {
+.contact {
+  max-width: 960px;
+  width: 100%;
+  .main-content {
+    max-width: 900;
+    width: 80%;
+    .form {
+      max-width: 300px;
+      width: 70%;
+      margin-right: 10%;
+    }
+  }
+}
+
+
+
+
+
+}
+@media (max-width: 550px) {
+.contact {
+  max-width: 550px;
+  width: 100%;
+  overflow-x: hidden;
+  .jumbo-contact {
+    background: url('../img/contact/contact-mobile-jumbotron.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 270px;
+    .container {
+      position: relative;
+      top: 50px;
+      left: 5%;
+      h1 {
+        font-size: 3rem;
+        line-height: 40px;
+        letter-spacing: .3rem;
+    }
+  }
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    width: 100%;
+    form {
+      width: 120%;
+      button {
+        height: 100%;
+        width: 60%;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        margin-left: 30%;
+      }
+      #exampleFormControlInput1 {
+      width: 100%;
+      height: 40px;
+    }
+      #exampleFormControlSelect1.form-control {
+      width: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+}

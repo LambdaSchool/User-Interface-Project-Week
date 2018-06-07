@@ -1,0 +1,187 @@
+.services {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  .jumbo-services {
+    max-width: 1024px;
+    width: 100%;
+    height: 240px;
+    margin: 0 auto;
+    background: url('../img/services/services-jumbotron.png');
+    .container {
+      height: 100%:
+      position: relative;
+      h1 {
+        font-weight: 700;
+        font-size: 6.4rem;
+        line-height: 7.5rem;
+        color: @white;
+        position: relative;
+        top: 140px;
+      }
+    }
+  }
+  .main-section {
+    width: 85%;
+    margin: 0 auto;
+    h3 {
+      line-height: 30px;
+      margin-top: 50px;
+    }
+    .tabs {
+      .tabs-items {
+        width: 100%;
+          .tabs-item {
+            display: none;
+            width: 80%;
+          }
+          .tabs-item-selected {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 70px;
+            .tabs-item-title {
+              font-size: 2.2rem;
+              font-weight: bold;
+              letter-spacing: 1.5px;
+              margin-top: 50px;
+            }
+            .tabs-item-description {
+              display: flex;
+              justify-content: space-between;
+              .tabs-item-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 420px;
+                height: 320px;
+                p {
+                  line-height: 27px;
+                  margin-top: 0px;
+                }
+              }
+              .services-desktop {
+                display: block;
+              }
+              .services-mobile {
+                display: none;
+              }
+              @media (max-width: 400px) {
+                .services-desktop {
+                  display: none;
+                }
+                .services-mobile {
+                  display: block;
+                }
+              }
+            }
+          }
+      }
+    }
+
+      .tabs-links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        .tabs-link {
+          border: 1px solid black;
+          height: 48px;
+          width: 22%;
+          font-weight: bold;
+          font-size: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .tabs-link:hover {
+          background-color: @offblack;
+          color: @white;
+        }
+        .tabs-link-selected {
+          background-color: #5E9FB9;
+          color: @white;
+        }
+      }
+  }
+  .footer {
+    .footer-top {
+      .form-group {
+        p {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+}
+
+@media (max-width: 400px) {
+  .services {
+    max-width: 400px;
+    overflow-x: hidden;
+    .jumbo-services {
+      background: url('../img/services/services-mobile-jumbotron.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 250px;
+      .container {
+        postion: relative;
+        h1 {
+          font-size: 3.6rem;
+          top: 170px;
+          left: 20px;
+        }
+      }
+    }
+    .main-section {
+      max-width: 400px;
+      h3 {
+
+        margin-top: 30px;
+        line-height: 26px;
+      }
+      .tabs {
+        max-width: 400px;
+        .tabs-item-selected {
+          height: 800px;
+          .tabs-item-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+          }
+          .tabs-item-description {
+            flex-direction: column;
+            max-width: 400px;
+            .tabs-item-text {
+              max-width: 400px;
+              margin-top: 200px;
+              justify-content: space-between;
+              p {
+                width: 300px;
+              }
+              p:nth-child(2) {
+                margin-top: 30px;
+              }
+            } img {
+              margin-top: 240px;
+            }
+          }
+        }
+        .tabs-links {
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+         max-width: 400px;
+         height: 260px;
+
+         .tabs-link {
+           width: 90%;
+         }
+       }
+      }
+    }
+    .footer {
+      margin-top: 500px;
+    }
+  }
+}
