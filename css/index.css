@@ -1,1 +1,461 @@
-/* Should be empty until you compile your LESS */
+.footer {
+  background: #828282;
+  color: white;
+  text-align: center;
+  padding: 1% 5%;
+}
+@media (max-width: 500px) {
+  .footer {
+    text-align: left;
+  }
+  .footer .copyright {
+    margin: 5% 0;
+  }
+}
+.footer .info {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  line-height: 1.6;
+}
+.footer .info > * {
+  flex: 1;
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .footer .info {
+    flex-direction: column;
+  }
+}
+.footer .action {
+  flex: 2;
+}
+.footer .small {
+  font-size: 0.8rem;
+}
+.footer input {
+  width: 93%;
+  font-size: 1.2rem;
+  padding: 2%;
+  margin: 1% 0;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .footer input {
+    margin: 3% 0;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html .container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background: #FFFFFF;
+  color: #222222;
+  font-Family: Roboto, Arial, sans-serif;
+}
+html h1 {
+  font-size: 2rem;
+}
+html h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html h3 {
+  font-size: 1.5rem;
+}
+html p {
+  font-size: 1rem;
+}
+.header {
+  background: url("../img/home/home-jumbotron.png");
+  height: 600px;
+  position: relative;
+}
+@media (max-width: 500px) {
+  .header {
+    height: 278px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.header h2 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 3rem;
+  left: 5rem;
+  line-height: 1.2;
+}
+@media (max-width: 500px) {
+  .header h2 {
+    font-size: 3rem;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+  }
+}
+.intro {
+  width: 85%;
+  margin: 0 auto;
+}
+.intro .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10% 0;
+}
+.intro .card .slide {
+  opacity: 0;
+}
+@media (max-width: 500px) {
+  .intro .card {
+    flex-direction: column;
+  }
+  .intro .card img {
+    order: -1;
+    margin-bottom: 5%;
+  }
+}
+.intro .card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 220px;
+  line-height: 1.6;
+}
+.intro .card .content .button {
+  border: 2px solid black;
+  padding: 3%;
+  width: 150px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .intro .card .content .button {
+    width: 100%;
+  }
+}
+.intro .card .content2 {
+  order: 1;
+}
+.projects {
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.projects .project .image1 {
+  background: url("../img/home/home-villas-img.png") no-repeat;
+}
+.projects .project .image1 h3 {
+  right: 0;
+  bottom: -15%;
+}
+.projects .project .image2 {
+  background: url("../img/home/home-outskirts-img.png") no-repeat;
+}
+.projects .project .image2 h3 {
+  left: 0;
+  bottom: -15%;
+}
+.projects .project .image3 {
+  background: url("../img/home/home-the-blocks-img.png") no-repeat;
+}
+.projects .project .image3 h3 {
+  right: 0;
+  bottom: -15%;
+}
+.projects .project .image1,
+.projects .project .image2,
+.projects .project .image3 {
+  height: 230px;
+  position: relative;
+  margin: 5% 0 10% 0;
+}
+.projects .project .image1 h3,
+.projects .project .image2 h3,
+.projects .project .image3 h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #D8D8D8;
+  width: 310px;
+  height: 90px;
+  letter-spacing: 8px;
+  position: absolute;
+}
+@media (max-width: 500px) {
+  .projects .project .image1 h3,
+  .projects .project .image2 h3,
+  .projects .project .image3 h3 {
+    left: 13%;
+  }
+}
+.projects .project p {
+  width: 55%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}
+@media (max-width: 500px) {
+  .projects .project p {
+    width: 100%;
+  }
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation {
+  font-weight: Bold;
+  font-size: 24px;
+  color: #FFFFFF;
+  background-color: #9FA9B3;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation .hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation .logo,
+.navigation .cross {
+  z-index: 2;
+}
+.navigation > * {
+  padding: 1% 10%;
+}
+.navigation .hidden {
+  display: none;
+}
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(159, 169, 179, 0.9);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s ease all;
+}
+.modal .navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal .navLinks .navLink {
+  font-size: 4rem;
+  line-height: 1.5;
+}
+.modal .navLinks .navLink a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  z-index: 2;
+}
+/*------------------------------------*\
+RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0b1 | 201101 
+NOTE:WORK IN PROGRESS
+USE WITH CAUTION AND TEST WITH ABANDON */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Your Code Goes Here */
+.servicesHeader {
+  background: url("../img/services/services-jumbotron.png") no-repeat;
+  height: 250px;
+  position: relative;
+}
+.servicesHeader h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 12%;
+  left: 10%;
+}
+.servicesIntro {
+  width: 85%;
+  margin: 5% auto;
+  line-height: 2;
+}
+.servicesTabs {
+  width: 85%;
+  margin: 0 auto;
+}
+.servicesTabs .tabs-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+.servicesTabs .tabs-links .tabs-link {
+  border: 2px solid black;
+  padding: 1.5%;
+  width: 175px;
+  text-align: center;
+  font-weight: bold;
+}
+.servicesTabs .tabs-links .tabs-link:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid #5E9FB9;
+  cursor: pointer;
+}
+.servicesTabs .tabs-links .tabs-link-selected {
+  background: #5E9FB9;
+  color: white;
+}
+.servicesTabs .tabs-items {
+  margin-bottom: 5%;
+}
+.servicesTabs .tabs-items .tabs-item {
+  display: none;
+}
+.servicesTabs .tabs-items .tabs-item-selected {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.servicesTabs .tabs-items .tabs-item-selected .tabs-item-info {
+  line-height: 1.8;
+  width: 400px;
+}

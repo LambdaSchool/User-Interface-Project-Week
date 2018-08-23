@@ -1,0 +1,143 @@
+.header {
+  background: url("../img/home/home-jumbotron.png");
+  height: 600px;
+  position: relative;
+
+  @media @mobile500 {
+    height: 278px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  h2 {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 3rem;
+    left: 5rem;
+    line-height: 1.2;
+
+    @media @mobile500 {
+      font-size: 3rem;
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+    }
+  }
+}
+
+.intro {
+  width: 85%;
+  margin: 0 auto;
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% 0;
+
+    .slide {
+      opacity:0;
+    }
+
+    @media @mobile500 {
+      flex-direction: column;
+
+      img {
+        order: -1;
+        margin-bottom: 5%;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 400px;
+      height: 220px;
+      line-height: 1.6;
+
+      .button {
+        border: 2px solid black;
+        padding: 3%;
+        width: 150px;
+        text-align: center;
+
+        @media @mobile500 {
+          width: 100%;
+        }
+      }
+    }
+
+    .content2 {
+      order: 1;
+    }
+  }
+}
+
+.projects {
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.5;
+
+  .project {
+    .image1 {
+      background: url("../img/home/home-villas-img.png") no-repeat;
+
+      h3 {
+        right: 0;
+        bottom: -15%;
+      }
+    }
+
+    .image2 {
+      background: url("../img/home/home-outskirts-img.png") no-repeat;
+
+      h3 {
+        left: 0;
+        bottom: -15%;
+      }
+    }  
+
+    .image3 {
+      background: url("../img/home/home-the-blocks-img.png") no-repeat;
+
+      h3 {
+        right: 0;
+        bottom: -15%;
+      }
+    }
+    
+    .image1, .image2, .image3 {
+      height: 230px;
+      position: relative;
+      margin: 5% 0 10% 0;
+      
+      h3 {
+        .flexCenter;
+        background: @homeSquares;
+        width: 310px;
+        height: 90px;
+        letter-spacing: 8px;
+        position: absolute;
+      }
+
+      @media @mobile500 {
+        h3 {
+          left: 13%;
+        }
+      }
+    }
+
+    p {
+      width: 55%;
+      margin: 0 auto;
+      margin-bottom: 10%;
+
+      @media @mobile500 {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.navigation {
+  font-weight: @navLogoFontWeight;
+  font-size: @navLogoFontSize;
+  color: @navLogoColor;
+  background-color: #9FA9B3;
+  display: flex;
+  justify-content: space-between;
+
+  .hamburger {
+    .flexCenter;
+  }
+
+  .logo,
+  .cross {
+    z-index: 2;
+  }
+
+  & > * {
+    padding: 1% 10%;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(159, 169, 179, 0.9);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s ease all;
+
+  .navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .navLink {
+      font-size: 4rem;
+      line-height: 1.5;
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        z-index: 2;
+      }
+    }
+  }
+}
