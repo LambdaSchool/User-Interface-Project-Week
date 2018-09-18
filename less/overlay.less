@@ -1,0 +1,52 @@
+.overlay {
+  background-color: @overlay-bg;
+  height: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  transition: .3s ease;
+  width: 100%;
+  z-index: 2;
+  
+  .overlay-header {
+    color: @nav-text-color;
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 22px 85px;
+    width: 1024px;
+
+    @media @phone {
+      width: 320px;
+    }
+  }
+
+  .overlay-content {
+    color: @nav-text-color;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-size: 4.8rem;
+    font-weight: bold;
+    line-height: 8.5rem;
+    position: relative; 
+    top: 8%;
+    
+    a {
+      text-decoration: none;
+
+      &:link, &:visited {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      &:hover, &:active {
+        color: @nav-link-hover-color;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.header-container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+  position: relative;
+  width: 100%;
+
+  .nav-bar {
+    align-items: center;
+    align-content: flex-start;
+    background-color: @header-bg;
+    color: @nav-text-color;
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 12px 85px 11px 85px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    @media @phone {
+      padding: 12px 15px;
+    }
+
+    img {
+      min-height: 21px;
+      min-width: 32px;
+      margin-top: 3px;
+    }
+
+    .overlay-open-icon {
+
+      @media @phone {
+        margin-top: 2px;
+      }
+    }
+  }
+}

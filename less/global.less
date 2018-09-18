@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
+
+  @media @phone {
+    max-width: 320px;
+    width: 100%;
+  }
+}
