@@ -1,0 +1,75 @@
+main {
+	.jumbotron.services {
+		img {
+			height: auto;
+			width: 100%;
+		}
+		
+		.img-res();
+
+		h1 {
+			position: absolute;
+			transform: translate(8.4vw, -125%);
+		}
+	}
+	
+	.services-intro {
+		p {
+			line-height: 26px;
+			padding: 50px 0 42px 0;
+		}
+
+		.services-tabs {
+			display: flex;
+			justify-content: space-between;
+			
+			.services-tab {
+				border: 1px solid @black;
+				cursor: pointer;
+				font-size: 2rem;
+				font-weight: bold;
+				line-height: 47px;
+				text-align: center;
+				width: 185px;
+				&:hover {
+					background: #222222;
+					color: #ffffff;
+				}
+			}
+			
+			.services-tab-selected {
+				background: #5e9fb9;
+				border: 1px solid @black;
+				cursor: pointer;
+				font-size: 2rem;
+				font-weight: bold;
+				line-height: 47px;
+				text-align: center;
+				width: 185px;
+			}
+		}
+	}
+
+	.services-article {
+		display: none;
+	}
+
+	.services-article-selected {
+		display: flex;
+		justify-content: space-between;
+		margin: 50px 0 80px 0;
+
+		.services-content {
+			width: 49%;
+
+			h2 {
+				margin-bottom: 16px;
+			}
+
+			p {
+				line-height: 26px;
+				margin-bottom: 26px;
+			}
+		}
+	}
+}

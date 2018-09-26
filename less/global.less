@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  color: @black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+
+h1 {
+  color: @white;
+  font-size: 6.4rem;
+  font-weight: bold;
+  line-height: 75px;
+
+  @media @mobile {
+    font-size: 3.6rem;
+    line-height: 1.2;
+  }
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 24px;
+}
+
+.container {
+	max-width: 850px;
+  margin: 0 auto;
+  
+  @media @mobile {
+    max-width: 320px;
+  }
+}

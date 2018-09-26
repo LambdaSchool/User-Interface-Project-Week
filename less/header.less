@@ -1,0 +1,52 @@
+header {
+  background-color: @header-bg;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+
+  .container.menu {
+    .custom-flex(center, space-between);
+    padding: 14px 0;
+
+    @media @mobile {
+      .container-2();
+    }
+
+    h2 {
+      color: @white;
+    }
+
+    img {
+      cursor: pointer;
+    }
+
+    .close {
+      display: none;
+    }
+  }
+
+  nav {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+    a {
+      color: @white;
+      cursor: pointer;
+      font-size: 4.8rem;
+      font-weight: bold;
+      line-height: 85px;
+      text-decoration: none;
+      transform: translate(41.2%, -60%);
+
+      @media @mobile {
+        transform: translate(22%, -60%);
+      }
+    }
+
+    a:hover {
+      color: @black;
+    }
+  }
+}

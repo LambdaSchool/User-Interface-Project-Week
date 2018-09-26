@@ -1,0 +1,139 @@
+main {
+  .jumbotron.home {
+		img {
+			height: auto;
+			width: 100%;
+		}
+		
+    .img-res();
+    
+    h1 {
+      position: absolute;
+      transform: translate(8vw, -122%);
+
+      @media @mobile {
+        transform: translate(4.5vw, -117%);
+      }
+    }
+  }
+
+  .container.home {
+	
+		.about {
+      .basic-flex();
+
+      .about-img {
+				width: 48%;
+        .container-2();
+
+        img {
+          height: auto;
+          width: 100%;
+        }
+
+        .img-res();
+      }
+
+      .about-top {
+        .custom-flex(center, space-between);
+				flex-direction: row-reverse;
+        margin: 50px 0;
+				width: 100%;
+				
+				@media @mobile {
+					margin: 35px 0 0 0;
+				}
+      }
+
+      .about-bottom {
+				.custom-flex(center, space-between);
+        margin: 50px 0;
+				width: 100%;
+				
+				@media @mobile {
+					margin: 45px 0 0 0;
+				}
+      }
+
+      .about-content {
+				width: 48%;
+        .container-2();
+
+        h2 {
+					margin-bottom: 20px;
+					
+					@media @mobile {
+						margin: 28px 0 22px 0;
+					}
+        }
+
+        .btn {
+          .home-btn();
+        }
+      }
+    }
+
+    .projects {
+      .basic-flex();
+
+      h2 {
+				margin: 47.5px 0;
+				
+				@media @mobile {
+					margin: 52px auto 25px auto;
+					width: 90.625%;
+				}
+      }
+
+      .projects-img {
+        img {
+          height: auto;
+					width: 100%;
+        }
+
+        .img-res();
+			}
+
+      .projects-top {
+        .projects-margin(25px);
+
+        .project-title {
+          .project-square(right);
+        }
+
+        p {
+					.project-text(right);
+					.container-3(20px);
+				}
+      }
+
+      .projects-middle {
+        .projects-margin(21px);
+
+        .project-title {
+          .project-square(left);
+        }
+
+        p {
+					.project-text(left);
+					.container-3(25px);
+				}
+				
+				
+      }
+
+      .projects-bottom {
+        .projects-margin(53px);
+
+        .project-title {
+          .project-square(right);
+        }
+
+        p {
+					.project-text(right);
+					.container-3(25px);
+        }
+      }
+    }
+  }
+}
