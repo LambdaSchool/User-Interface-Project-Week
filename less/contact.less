@@ -1,0 +1,284 @@
+.contact {
+
+  &__header {
+    background-image: url(../img/contact/contact-jumbotron.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media @tablet {
+      background-image: url(../img/contact/contact-mobile-jumbotron.png);
+    }
+
+    & > h1 {
+      font-size: 6.5rem;
+      letter-spacing: 2;
+      color: @white;
+      padding: 12rem 0 2rem 8rem;
+      font-weight: bold;
+
+      @media @tablet {
+        font-size: 3.5rem;
+        padding: 15.5rem 0 2.5rem 1.5rem;
+      }
+    }
+  }
+
+  &__form {
+
+    &-container {
+      display: flex;
+      padding: 5rem 8.5rem;
+      justify-content: space-between;
+
+      @media @tablet {
+        margin: 3.5rem 3rem;
+      }
+
+      @media @xsmall {
+        flex-direction: column;
+        padding: 3.2rem 1.2rem;
+        margin: 0;
+      }
+    }
+    
+    &-left{
+      width: 48%;
+      transition: all 1.75s ease-in-out;
+      opacity: 0;
+      transform: translateX(-25rem);
+
+      @media @tablet {
+        width: 100%;
+      }
+
+      span.address {
+        @media @tablet {
+          display: none;
+        }
+      }
+
+      h2{
+        font-weight: bold;
+        font-size: 2.3rem;
+        letter-spacing: .75px;
+        margin-bottom: 5rem;
+
+        @media @tablet{
+          margin-bottom: 5rem;
+        }
+      }
+
+      label {
+        display: block;
+        font-size: 1.6rem;
+        margin-bottom: .5rem;
+
+        @media @tablet {
+          line-height: 1.8;
+        }
+
+      }
+
+      textarea {
+        width: 100%;
+        border: 1px solid @primary;
+        border-radius: 5px;
+        margin-bottom: 4rem;
+        color: @primary;
+        background: @white;
+
+        @media @tablet {
+          margin-bottom: 1.2rem;
+        }
+      }
+
+      input {
+        width: 100%;
+        border: 1px solid @primary;
+        border-radius: 5px;
+        color: @primary;
+        background: @white;
+        
+        &:placeholder-shown {
+          padding: 1rem;
+
+          @media @tablet {
+            font-size: 1.4rem;
+          }
+        }
+
+        &[type=number] {
+          padding: 1rem;
+          margin-bottom: 4rem;
+
+          @media @tablet {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      p {
+        font-size: 1.3rem;
+        padding: .75rem 0 4rem;
+
+        @media @tablet {
+          padding-bottom: 2rem;
+        }
+      }
+
+      & button {
+        color: @primary;
+        background: @white;
+        font-size: 1.6rem;
+        padding: 1rem 4rem;
+        border-radius: 0;
+        border: 1px solid @primary;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          background: @primary;
+          color: @white;
+        }
+
+        @media @tablet {
+          display: block;
+          width: 100%;
+        }
+      }
+
+    }
+
+    &-right {
+      width: 48%;
+      padding-left: 13rem;
+      padding-top: 1.2rem;
+      opacity: 0;
+      transition: all 1.5s ease-in-out;
+      transform: translateX(25rem);
+
+      @media @tablet{
+        width: 100%;
+        padding-left: 4rem;
+        padding-top: 4rem;
+      }
+
+      @media @small {
+        padding-left: 2rem;
+      }
+
+      h2, h3 {
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        margin-bottom: .25rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        padding-bottom: 4rem;
+        line-height: 1.5;
+
+        @media @tablet {
+          line-height: 1.6;
+        }
+
+        &:last-of-type{
+
+          @media @tablet {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.radio-container {
+  margin-bottom: 3.5rem;
+
+  @media @tablet {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.form {
+  &__radio-input {
+    display: none;
+  }
+
+  &__radio-label {
+    font-size: 1.4rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 4.5rem;
+  }
+
+  &__radio-button {
+    height: 2rem;
+    width: 2rem;
+    border: 3px solid @primary;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -.4rem; 
+
+    @media @tablet {
+      margin-top: .75rem;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: .75rem;
+      width: .75rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: @primary;
+      opacity: 0;
+      transition: opacity .2s;
+    }
+  }
+
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+      opacity: 1;
+  }
+}
+
+@media @xsmall {
+  .tabletContainer {
+    display: flex;
+
+    h3 {
+      // font-size: 2rem;
+    }
+
+    p {
+      // font-size: 1.4rem;
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+@media @small {
+  .tabletContainer {
+    display: block;
+
+    p {
+      margin-right: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.footer {
+  background: @footer-bg-color;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.4;
+  color: @white;
+  display: flex;
+  padding: 5rem 4rem 1rem 8rem;
+  flex-wrap: wrap;
+
+  @media @xsmall {
+    flex-direction: column;
+    padding: 1rem 1rem 0;
+  }
+
+  &__contact {
+    width: 40%;
+
+    @media @xsmall {
+      width: 100%;
+    }
+
+    & > label {
+      display: block;
+      line-height: .2;
+    }
+
+    &-input {
+      padding: 1rem;
+      margin-top: 2rem;
+      display: block;
+      width: 80%;
+      border-radius: 5px;
+      font-size: 1.6rem;
+      border: none;
+
+      @media @xsmall {
+        width: 100%;
+        margin-top: 2.5rem;
+        padding: 1.5rem .75rem;
+        font-size: 1.4rem;
+      }
+
+      &__p {
+        font-size: 1.35rem;
+        font-weight: normal;
+      }
+    }
+  }
+
+  &__location-card {
+    width: 20%;
+    margin-left: -2rem;
+    margin-right: 2rem;
+
+    @media @xsmall {
+      width: 100%;
+      margin: 0;
+    }
+
+    &-heading {
+      @media @xsmall {
+        margin-top: 1rem;
+      }
+    }
+
+    &-address {
+      font-size: 1.3rem;
+
+      &__spans {
+        display: block;
+        margin-right: 1rem;
+        line-height: 2;
+        font-weight: normal;
+
+        &:first-child {
+          margin-top: -1rem;
+
+          
+        }
+
+        &:last-child {
+          margin-right: 0;
+          margin-bottom: 2rem;
+          
+          @media @xsmall {
+            margin-bottom: 0;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  &__copyright {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-right: 4rem;
+    margin-bottom: -.5rem;
+
+    @media @xsmall {
+      text-align: left;
+      margin: 3rem 0 2rem;
+      font-weight: normal;
+    }
+  }
+}

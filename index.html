@@ -1,96 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Home</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/index.css">
-	<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+		<link rel="stylesheet" href="css/index.css">
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
 
-<body>
+	<body>
+		<div id="fade-in" class="fade-in"></div>
+		<div class="menu">
+			<div class="data">
+				<ul>
+					<li><a id="home" href="index.html">Home</a></li>
+					<li><a id="services" href="services.html">Services</a></li>
+					<li><a id="contact" href="contact.html">Contact</a></li>
+				</ul>
+		</div>
+	</div>
+		<div class="container">
+			<header class="header">
+				<nav class="header__nav">
+					<p class="header__nav-logo">S&J</p>
+					<img  src="img/nav-hamburger.png"
+								alt="navigation hamburger icon"
+								class="header__nav-links__hamburger burger">
+				</nav>
+			</header>
+			<div class="header-spacer" id="spacer"></div>
+					
+			<section class="home__hero" id="hero">
+				<h2 class="home__hero__heading">
+					<span class="home__hero__heading--span" id="span1">Integrity,</span>
+					<span class="home__hero__heading--span">Excellence,</span>
+					<span class="home__hero__heading--span" id="span3">Progress.</span>
+				</h2>
+			</section>	
 
-	<h1>You got this!  Good luck.</h1>
+			<section class="home__main__container" id="main">
+					<main class="home__main">
+							<div class="home__main__card">
+								<h1 class="home__main__card_h1">Smith & Jones Architects</h1>
+								<p class="home__main__card_p">Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
+								<div class="home__main__card__btn">Learn More</div>
+							</div>
+							<img src="img/home/home-img-1.png"
+										srcset='img/home/home-img-1.png 1024w,
+														img/home/home-mobile-img-1.png 500w'
+										sizes='(min-width: 1024px) 1024px, 100vw'
+										alt="blueprint with pen and ruler on it"
+										id="homeImage1"
+										class="home__main-img homeImage1">
+							<img  src="img/home/home-img-2.png"
+										srcset='img/home/home-img-2.png 1024w,
+														img/home/home-mobile-img-2.png 500w'
+										sizes='(min-width: 1024px) 1024px, 100vw'
+										alt="blueprint with pen and ruler on it"
+										id="homeImage2"
+										class="home__main-img homeImage2">
+							<div class="home__main__card">
+									<h2 class="home__main__card_h2">Futuristic Designs</h2>
+									<p class="home__main__card_p">Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
+									<div class="home__main__card__btn--small">View Designs</div>
+							</div>
+					</main>
+					<section class="home__recent-projects">
+						<h2 class="home__recent-projects__heading">Recent Projects</h2>
+						<div class="home__recent-projects__container">
+							<div class="home__recent-projects__card">
+								<img  src="img/home/home-villas-img.png"
+											srcset='img/home/home-villas-img.png 1024w,
+															img/home/home-mobile-villas-img.png 500w'
+											sizes='(min-width: 1024px) 1024px, 100vw'
+											alt="image of the villas"
+											class="home__recent-projects__card-img">
+								<h3 class="home__recent-projects__card-heading--right">THE VILLAS</h3>
+							</div>
+							<p class="home__recent-projects__p">The Villas bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.</p>
+							<p class="home__recent-projects__p">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+						</div>
+						<div class="home__recent-projects__container">
+							<div class="home__recent-projects__card">
+								<img  src="img/home/home-outskirts-img.png"
+											srcset='img/home/home-outskirts-img.png 1024w,
+															img/home/home-mobile-outskirts-img.png 500w'
+											sizes='(min-width: 1024px) 1024px, 100vw'
+											alt="image of the outskirts"
+											class="home__recent-projects__card-img">
+								<h3 class="home__recent-projects__card-heading--left">OUTSKIRTS</h3>
+							</div>
+							<p class="home__recent-projects__p">The Outskirts are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. </p>
+							<p class="home__recent-projects__p">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+						</div>
+						<div class="home__recent-projects__container">
+							<div class="home__recent-projects__card">
+								<img  src="img/home/home-the-blocks-img.png"
+											srcset='img/home/home-the-blocks-img.png 1024w,
+															img/home/home-mobile-the-blocks-img.png 500w'
+											sizes='(min-width: 1024px) 1024px, 100vw'
+											alt="image of the blocks"
+											class="home__recent-projects__card-img">
+								<h3 class="home__recent-projects__card-heading--right" id="blocks">THE BLOCKS</h3>
+							</div>
+							<p class="home__recent-projects__p">The Blocks are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. </p>
+							<p class="home__recent-projects__p">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+						</div>
+					</section>
+			</section>
 
-<!-- Menu Content 
-S&J
+			<footer class="footer">
+				<div class="footer__contact">
+					<h3 class="footer__contact-heading">Interested in starting a project?</h3>
+					<label for="email">Let’s talk:</label>
+					<input placeholder="Enter email" type="email" id="email" class="footer__contact-input">
+					<p class="footer__contact-input__p">We'll never share your email with anyone else.</p>
+				</div>
+				<!-- <div class="footer__location-card-holder"> -->
+					<div class="footer__location-card">
+						<h3 class="footer__location-card-heading">New York</h3>
+						<address class="footer__location-card-address">
+							<span class="footer__location-card-address__spans">123 Lane</span>
+							<span class="footer__location-card-address__spans">Suite 100</span>
+							<span class="footer__location-card-address__spans">Albany, NY 12345</span>
+							<span class="footer__location-card-address__spans">202 555 0144</span>
+						</address>
+					</div>
+					<div class="footer__location-card">
+						<h3 class="footer__location-card-heading">Florida</h3>
+						<address class="footer__location-card-address">
+							<span class="footer__location-card-address__spans">Ocean Drive</span>
+							<span class="footer__location-card-address__spans">Suite 201</span>
+							<span class="footer__location-card-address__spans">Orlando, FL 22345</span>
+							<span class="footer__location-card-address__spans">502 555 0144</span>
+						</address>
+					</div>
+					<div class="footer__location-card">
+						<h3 class="footer__location-card-heading">California</h3>
+						<address class="footer__location-card-address">
+							<span class="footer__location-card-address__spans">Mountain Street</span>
+							<span class="footer__location-card-address__spans">Suite 105</span>
+							<span class="footer__location-card-address__spans">San Diego, CA 22345</span>
+							<span class="footer__location-card-address__spans">702 555 0144</span>
+						</address>
+					</div>
+				<!-- </div> -->
+				<p class="footer__copyright">Copyright © 2018 Smith and Jones</p>
+			</footer>
 
-Home
-Services
-Contact
--->
+		</div>
 
-
-<!-- Home Page Content:
-	
-Integrity,
-Excellence,
-Progress.
-
-Smith & Jones Architects
-
-Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem 
-
-Learn More
-
-Futuristic Designs
-
-Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem 
-
-View Designs
-
-Recent Projects
-
-THE VILLAS
-
-The Villas bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. 
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-
-OUTSKIRTS
-
-The Outskirts are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. 
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-
-THE BLOCKS
-
-The Blocks are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. 
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-
--->
-
-<!-- FOOTER CONTENT
-Interested in starting a project?  
-Let’s talk:
-
-Enter email
-
-We'll never share your email with anyone else.
-
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
-
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
-
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
-
-Copyright © 2018 Smith and Jones
--->
-	<script src="js/index.js"></script>
-</body>
+		<script src="js/index.js"></script>
+		
+	</body>
 </html>

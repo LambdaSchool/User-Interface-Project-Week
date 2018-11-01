@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  background: @white;
+  margin: 0 auto;
+}
+
+#fade-in {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: @primary-dark-gray;
+  z-index: 3000;
+  opacity: 1;
+  pointer-events: none;
+  transition: all .5s ease-in-out;
+}
+

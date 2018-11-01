@@ -1,0 +1,305 @@
+.home {
+
+  &__hero {
+    width: 100%;
+    background-image: url(../img/home/home-jumbotron.png);
+    background-size: cover;
+    background-position: bottom;
+    
+    @media @xsmall {
+      background-image: url(../img/home/home-mobile-jumbotron.png);
+    }
+
+    &__heading {
+      font-weight: bold;
+      font-size: 6.4rem;
+      line-height: 7.5rem;
+      color: @white;
+
+      @media @xsmall {
+        font-size: 3.5rem;
+        line-height: 4rem;
+      }
+
+      &--span {
+        display: block;
+        padding: 0 8rem;
+
+        @media @xsmall {
+          padding: 0 0 0 1rem;
+        }
+
+        &:first-child {
+          padding-top: 28rem;
+
+          @media @xsmall {
+            padding-top: 7rem;
+          }
+        }
+
+        &:last-child {
+          padding-bottom: 5rem;
+
+          @media @xsmall {
+            padding-bottom: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__main__container {
+    width: 100%;
+    padding: 6rem 8rem 0;
+
+    @media @xsmall {
+      padding: 0;
+      margin-bottom: 7rem;
+    }
+  }
+
+  &__main {
+    width: 100%;
+    background: @white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__card {
+      background: @white;
+      width: 48%;
+      padding: 4.2rem 0;
+      margin-bottom: 8.5rem;
+      text-align: justify;
+
+      @media @tablet {
+        width: 45%;
+      }
+
+      @media @xsmall{
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 2rem 1rem;
+        text-align: left;
+
+      }
+
+      &_h1, &_h2 {
+        color: @primary;
+        font-size: 2.4rem;
+        font-weight: bold;
+        padding-bottom: 2.2rem;
+
+        @media @tablet {
+          font-size: 2rem;
+        }
+      }
+
+      &_p {
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        padding-bottom: 1.5rem;
+
+        @media @tablet {
+          font-size: 1.4rem;
+        }
+      }
+
+      &__btn {
+        font-size: 1.5rem;
+        padding: 1.5rem 3rem;
+        border: 1px solid @primary; 
+        display: inline-block;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          background: @primary;
+          color: @white;
+          transform: scale(1.15);
+        }
+
+        &:active {
+          transform: scale(1.14);
+        }
+
+        @media @xsmall {
+          display: block;
+          text-align: center;
+          margin: 1rem auto;
+
+          &:hover {
+            transform: none;
+          }
+        }
+
+        &--small {
+          font-size: 1.5rem;
+          border: 1px solid @primary;
+          padding: 1.5rem 2rem;
+          margin-top: 1rem;
+          display: inline-block;
+          cursor: pointer;
+          transition: all .2s ease-in-out;
+
+        &:hover {
+          background: @primary;
+          color: @white;
+          transform: scale(1.15);
+        }
+
+        &:active {
+          transform: scale(1.14);
+        }
+
+          @media @xsmall {
+            display: block;
+            text-align: center;
+            margin: 1rem auto .5rem;
+
+            &:hover {
+              transform: none;
+            }
+          }
+        }
+      }
+    }
+
+    &-img {
+      margin-bottom: 8.5rem;
+      
+
+      @media @xsmall {
+        margin: 0 auto;
+        width: 95%;
+
+        &:first-of-type {
+          order: -1;
+          margin-top: 3.5rem;
+        }
+      }
+    }
+  }
+
+  &__recent-projects {
+    width: 100%;
+    margin: 0 auto;
+
+    &__heading {
+          font-size: 2.5rem;
+          font-weight: bold;
+          margin: 2rem 0 4rem;
+    
+          @media @xsmall {
+            margin: 1.25rem 0 2rem;
+            font-size: 2.35rem;
+            padding: 0 1rem;
+          }
+        }
+    
+    &__card {
+      width: 100%;
+      position: relative;
+      margin-bottom: 5rem;
+      transition: all 1.5s ease-out;
+      opacity: 0;
+      transform: translateY(5rem);
+
+      @media @xsmall {
+        margin-bottom: 7rem;
+      }
+
+      &-img {
+        width: 100%;
+        transition: all 1s ease-out;
+        height: auto;
+      }
+
+      &-heading--right {
+        border: 1px groove @white;
+        font-size: 2.5rem;
+        position: absolute;
+        right: 0;
+        bottom: -4rem;
+        letter-spacing: .75rem;
+        padding: 4rem 5.5rem;
+        background: @recent-projects-light-gray;
+
+        @media @xsmall {
+          padding: 3.5rem;
+          bottom: -8rem;
+          right: 1.4rem;
+        }
+      }
+
+      &-heading--left {
+        border: 1px groove @white;
+        font-size: 2.5rem;
+        position: absolute;
+        left: 0;
+        bottom: -4rem;
+        letter-spacing: .75rem;
+        padding: 4rem 5.5rem;
+        background: @recent-projects-light-gray;
+
+        @media @xsmall {
+          padding: 3.5rem;
+          bottom: -8rem;
+          left: 1.4rem;
+        }
+      }
+
+
+    }
+
+    &__p {
+      margin: 0 auto;
+      width: 52%;
+      font-size: 1.8rem;
+      line-height: 1.37;
+      padding-top: 4rem;
+      width: 50%;
+      // margin: 0 auto;
+
+      @media @xsmall {
+        width: 90%;
+      }
+    }
+
+    &__p:nth-of-type(even) {
+      margin-bottom: 10rem;
+
+      @media @xsmall {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__p:nth-of-type(odd) {
+      margin-bottom: -2.1rem;
+    }
+
+  }
+
+}
+
+.homeImage1 {
+  opacity: 0;
+  transform: translateX(10rem);
+  transition: all 1s ease-out;
+}
+
+.homeImage2 {
+  opacity: 0;
+  transform: translateX(-10rem);
+  transition: all 1s ease-out;
+}
+
+.activeImg {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.activeProject {
+  opacity: 1;
+  transform: translateY(0);
+}

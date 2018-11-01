@@ -1,0 +1,101 @@
+.header {
+  padding: 1rem 9rem;
+  background: @primary-dark-gray;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  max-width: 1024px;
+  
+  @media @xsmall {
+    padding: 1.2rem 1rem;
+  }
+  
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+
+    &-logo {
+      font-weight: bold;
+      font-size: 2.4rem;
+      color: @white;
+      display: inline-block;
+    }
+
+    &-links {
+      display: inline-block;
+
+      &__link {
+        display: none;
+      }
+
+      &__hamburger {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.header-spacer {
+  width: 100%;
+  height: 43px;
+  background-color: @primary-dark-gray;
+  opacity: 0;
+}
+
+.active {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background: @primary-dark-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.active {
+  position: fixed;
+  opacity: 0;
+  z-index: 99;
+  background: @primary-dark-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  top: -100%;
+}
+
+.menu {
+  z-index: 99;
+  background: @primary-dark-gray;
+  width: 0;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    font-weight: bold;
+    font-size: 5rem;
+    text-decoration: none;
+    padding: 2rem 5rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: @white;
+
+    &:hover {
+      background: @primary-dark-gray;
+      color: #504545;
+    }
+  }
+}

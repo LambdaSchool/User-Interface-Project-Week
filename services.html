@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Services</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
 	<link rel="stylesheet" href="css/index.css">
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -11,27 +15,141 @@
 </head>
 
 <body>
+	<div id="fade-in" class="fade-in"></div>
+	<div class="menu">
+		<div class="data">
+			<ul>
+				<li><a id="home" href="index.html">Home</a></li>
+				<li><a id="services" href="services.html">Services</a></li>
+				<li><a id="contact" href="contact.html">Contact</a></li>
+			</ul>
+	</div>
+</div>
+	<div class="container">
+		<header class="header">
+			<nav class="header__nav">
+				<p class="header__nav-logo">S&J</p>
+				<img  src="img/nav-hamburger.png"
+							alt="navigation hamburger icon"
+							class="header__nav-links__hamburger burger">
+			</nav>
+		</header>
+		<div class="header-spacer"></div>
+		
+		<section class="services__hero">
+			<h1>Services</h1>
+		</section>
 
-	<h1>Services</h1>
+		<section class="services__tabs">
+			<p class="services__tabs-p">Services include: completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+			<div class="services__tabs-container" id="tabComponent">
 
-<!-- Services Content 
-  Services
-  
-  Services include: completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
--->
+				<!-- TABS START HERE -->
+				<div  class="services__tabs-tab"
+						  data-tab="preConstruction">Pre-Construction</div>
+				<div  class="services__tabs-tab active-tab"
+							data-tab="construction">Construction</div>
+				<div  class="services__tabs-tab"
+							data-tab="designBuild">Design Build</div>
+				<div  class="services__tabs-tab"
+							data-tab="sustainability">Sustainability</div>
 
-<!-- *** NOTE *** Tab Navigator Content: I used the same text for each tab to make it easy, Note that the images and text do change on click but you can just use the same text for each tab element.  All the images should be in the img folder.
+				<!-- TAB CARDS START HERE -->
+				<div class="services__tabs-card" data-tab="preConstruction">
+					<div class="services__tabs-card__text-content-container">
+						<h2>Pre-Construction</h2>
+						<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+						<p>Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+					</div>
+					<img  src="img/services/services-tab-pre-construction-img.png"
+								srcset='img/services/services-tab-pre-construction-img.png 1024w,
+												img/services/services-tab-mobile-pre-construction-img.png 500w'
+								sizes='(min-width: 1024px) 1024px, 100vw'
+								alt="pre-construction blueprint image">
+				</div>
+				<div  class="services__tabs-card active-card"
+							data-tab="construction">
+					<div class="services__tabs-card__text-content-container">
+						<h2>Construction</h2>
+						<p>Completely cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service. Professionally synergize resource taxing relationships via premier niche markets.</p>
+						<p>Methodologies with web-enabled technology phosfluorescently engage worldwide. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+					</div>
+					<img  src="img/services/services-tab-construction-img.png"
+								srcset='img/services/services-tab-construction-img.png 1024w,
+												img/services/services-tab-mobile-construction-img.png 500w'
+								sizes='(min-width: 1024px) 1024px, 100vw'
+								alt="construction tab pic"
+								class="tab-card-img">
+				</div>
+				<div  class="services__tabs-card"
+						  data-tab="designBuild">
+					<div class="services__tabs-card__text-content-container">
+						<h2>Design Build</h2>
+						<p>Phosfluorescently engage worldwide methodologies with web-enabled technology. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+						<p>Completely synergize resource taxing relationships via premier niche markets. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+					</div>
+					<img  src="img/services/services-tab-design-build-img.png"
+								srcset='img/services/services-tab-design-build-img.png 1024w,
+												img/services/services-tab-mobile-design-build-img.png 500w'
+								sizes='(min-width: 1024px) 1024px, 100vw'
+								alt="architects planning around a table">
+				</div>
+				<div  class="services__tabs-card"
+							data-tab="sustainability">
+					<div class="services__tabs-card__text-content-container">
+						<h2>Sustainability</h2>
+						<p>Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+						<p>One-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+					</div>
+					<img  src="img/services/services-tab-sustainability-img.png"
+								srcset='img/services/services-tab-sustainability-img.png 1024w,
+												img/services/services-tab-mobile-sustainability-img.png 500w'
+								sizes='(min-width: 1024px) 1024px, 100vw'
+								alt="large buildings in a city">
+				</div>
+			</div>
+		</section>
 
-  Pre-Construction
-  Construction
-  Design Build
-  Sustainability
+		<footer class="footer">
+				<div class="footer__contact">
+					<h3 class="footer__contact-heading">Interested in starting a project?</h3>
+					<label for="email">Let’s talk:</label>
+					<input placeholder="Enter email" type="email" id="email" class="footer__contact-input">
+					<p class="footer__contact-input__p">We'll never share your email with anyone else.</p>
+				</div>
+				<!-- <div class="footer__location-card-holder"> -->
+					<div class="footer__location-card">
+						<h3 class="footer__location-card-heading">New York</h3>
+						<address class="footer__location-card-address">
+							<span class="footer__location-card-address__spans">123 Lane</span>
+							<span class="footer__location-card-address__spans">Suite 100</span>
+							<span class="footer__location-card-address__spans">Albany, NY 12345</span>
+							<span class="footer__location-card-address__spans">202 555 0144</span>
+						</address>
+					</div>
+					<div class="footer__location-card">
+						<h3 class="footer__location-card-heading">Florida</h3>
+						<address class="footer__location-card-address">
+							<span class="footer__location-card-address__spans">Ocean Drive</span>
+							<span class="footer__location-card-address__spans">Suite 201</span>
+							<span class="footer__location-card-address__spans">Orlando, FL 22345</span>
+							<span class="footer__location-card-address__spans">502 555 0144</span>
+						</address>
+					</div>
+					<div class="footer__location-card">
+						<h3 class="footer__location-card-heading">California</h3>
+						<address class="footer__location-card-address">
+							<span class="footer__location-card-address__spans">Mountain Street</span>
+							<span class="footer__location-card-address__spans">Suite 105</span>
+							<span class="footer__location-card-address__spans">San Diego, CA 22345</span>
+							<span class="footer__location-card-address__spans">702 555 0144</span>
+						</address>
+					</div>
+				<!-- </div> -->
+				<p class="footer__copyright">Copyright © 2018 Smith and Jones</p>
+			</footer>
 
-  Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.  Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
-
-
-
--->
+	</div>
 
 	<script src="js/index.js"></script>
 </body>
