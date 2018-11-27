@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: @generalBackground;
+  overflow-x: hidden;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  span,
+  div {
+    font-family: @generalFontFamily;
+
+  }
+}
+
+p {
+  color: #222222;
+  .general-text;
+}
+
+.page {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media @mobile {
+    max-width: 500px;
+    width: 100%;
+  }
+
+}
+
+.content {
+  max-width: 854px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media @mobile {
+    .mobile-width;
+  }
+}

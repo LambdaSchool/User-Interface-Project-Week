@@ -1,0 +1,223 @@
+body {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page {
+  max-width: 1024px;
+  width: 100%;
+
+  @media @mobile {
+    max-width: 500px;;
+
+  }
+
+  .sub-header {
+    .sub-headers;
+  }
+
+  .home-splash {
+    background-image: url("../img/home/home-jumbotron.png");
+    max-width: 1024px;
+    width: 100%;
+    height: 598px;
+
+    @media @mobile {
+      background-image: url("../img/home/home-mobile-jumbotron.png");
+      .mobile-width;
+      height: 30vh;
+      margin: 0 auto;
+      margin-top: 30px;
+      .mobile-background;
+      background-position: bottom;
+    }
+
+    .jumbotron {
+      font-family: @generalFontFamily;
+      .jumbotron-headers;
+      position: relative;
+      top: 325px;
+      left: 8%;
+
+      @media @mobile {
+        font-size: 3.2rem;
+        top: 50px;
+        line-height: normal;
+        .mobile-width;
+      }
+    }
+  }
+
+  .learn-more {
+    display: flex;
+    width: 100%;
+    margin: 40px 0;
+    justify-content: space-between;
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      margin: 10px auto;
+      width: 95%;
+    }
+
+    .text-container {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+
+      @media @mobile {
+        width: 100%;
+        margin: 20px 0;
+
+        h2 {
+          @media @mobile {
+            font-size: 2.2rem;
+            margin: 15px 0;
+          }
+        }
+
+        p {
+          @media @mobile {
+            margin: 15px 0;
+          }
+        }
+      }
+
+      button {
+        font-size: 1.6rem;
+        padding: 15px 6.5%;
+        border-color: #222222;
+        background-color: @generalBackground;
+
+        &:hover {
+          background-color: #222222;
+          color: @generalBackground;
+        }
+        @media @mobile {
+          width: 95%;
+        }
+      }
+    }
+
+    img {
+      width: 45%;
+
+      @media @mobile {
+        width: 100%;
+        order: -1;
+      }
+    }
+  }
+
+  .designs {
+    img {
+      order: -1;
+
+    }
+  }
+
+  .recent-projects {
+    p {
+      max-width: 450px;
+      width: 100%;
+      margin: 50px auto;
+
+      @media @mobile {
+        .mobile-width;
+        width: 95%;
+      }
+    }
+
+    h3 {
+      width: 35%;
+      background: @recentProjectsGray;
+      padding: 30px 1%;
+      font-size: 2.4rem;
+      font-weight: lighter;
+      text-align: center;
+      position: relative;
+      letter-spacing: 1rem;
+
+      @media @mobile {
+        width: 95%;
+      }
+    }
+
+    .header-img {
+      max-width: 855px;
+      width: 100%;
+      height: 230px;
+      margin: 30px auto;
+      @media @mobile {
+        .mobile-width;
+        height: 200px;
+
+      }
+    }
+
+    .the-villas {
+      .header-img {
+        background: url("../img/home/home-villas-img.png");
+        @media @mobile {
+          background: url("../img/home/home-mobile-villas-img.png");
+          margin-bottom: 80px;
+          .mobile-background;
+
+
+        }
+
+        h3 {
+          left: 70%;
+          top: 170px;
+          @media @mobile {
+            left: 2%;
+            top: 180px;
+          }
+        }
+      }
+    }
+
+    .outskirts {
+      .header-img {
+        background: url("../img/home/home-outskirts-img.png");
+        @media @mobile {
+          background: url("../img/home/home-mobile-outskirts-img.png");
+          margin-bottom: 80px;
+          .mobile-background;
+        }
+
+        h3 {
+          top: 170px;
+          @media @mobile {
+            left: 2%;
+            top: 180px;
+          }
+        }
+      }
+    }
+
+    .the-blocks {
+      .header-img {
+        background: url("../img/home/home-the-blocks-img.png");
+        @media @mobile {
+          background: url("../img/home/home-mobile-the-blocks-img.png");
+          margin-bottom: 80px;
+          .mobile-background;
+        }
+
+        h3 {
+          left: 65%;
+          top: 170px;
+          @media @mobile {
+            left: 2%;
+            top: 180px;
+          }
+        }
+      }
+    }
+  }
+}

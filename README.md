@@ -12,12 +12,12 @@ You will use Trello to report your progress on the MVP and any extra features yo
 - Don't overplan, start coding as soon as you can and adjust accordingly.  Trello is there as a guide not as a distraction
 
 ## Trello Set Up:
-* [ ] Create a [Trello account](https://trello.com/)
-* [ ] Create a new public board called "S&J Architects - By Your Name"
-* [ ] Create lists titled ```backlog```,```To Do```, ```In Progress```, and ```Done```
-* [ ] Fill in the ```To Do``` list with the MVP features listed below
-* [ ] Fill in the ```backlog``` list with all the extra features listed below
-* [ ] Share your board with the Project Manager that has been assigned to you.  If you have not been assigned yet, reach out to your lead TA for guidance
+* [x] Create a [Trello account](https://trello.com/)
+* [x] Create a new public board called "S&J Architects - By Your Name"
+* [x] Create lists titled ```backlog```,```To Do```, ```In Progress```, and ```Done```
+* [x] Fill in the ```To Do``` list with the MVP features listed below
+* [x] Fill in the ```backlog``` list with all the extra features listed below
+* [x] Share your board with the Project Manager that has been assigned to you.  If you have not been assigned yet, reach out to your lead TA for guidance
 
 ## Assets Provided:
 * [Style guide:](/DesignFiles/style-guide.md) This file will help you identify font sizes, colors, and font families across the site.
@@ -27,13 +27,13 @@ You will use Trello to report your progress on the MVP and any extra features yo
 
 ## MVP Features:
 These MVP features represent the fundamental knowledge you should have obtained throughout the last 4 weeks.  If you cannot accomplish all of the MVP tasks listed here, you may be a candidate for the mastery based program.
-* [ ] Build layout **HTML/LESS**: [Home page desktop design](/DesignFiles/Home/home-desktop.png)
-* [ ] Build layout **HTML/LESS**: [Home page mobile design](/DesignFiles/Home/home-mobile.png)
-* [ ] Build layout **HTML/LESS**: [Services page **desktop design only**](/DesignFiles/Services/services-desktop.png)
-* [ ] Build layout **HTML/LESS/JavaScript**: [Navigation system design](DesignFiles/Navigation)
+* [x] Build layout **HTML/LESS**: [Home page desktop design](/DesignFiles/Home/home-desktop.png)
+* [x] Build layout **HTML/LESS**: [Home page mobile design](/DesignFiles/Home/home-mobile.png)
+* [x] Build layout **HTML/LESS**: [Services page **desktop design only**](/DesignFiles/Services/services-desktop.png)
+* [x] Build layout **HTML/LESS/JavaScript**: [Navigation system design](DesignFiles/Navigation)
 	* [Non-expanded View Design](DesignFiles/Navigation/non-expanded/non-expanded.png): When the navigation is not active, it should be fixed to the top of the page at all times
 	* [Expanded View Design](DesignFiles/Navigation/expanded): When a user clicks on the navigation icon a full page overlay will pop over all the content on the page. The navigation icon will be replaced by a close icon. The user must click the close icon to return back to browsing the website. The home and services pages need to be linked together using `<a></a>` tags. You must use your own custom JavaScript for the opening and closing functionality, no bootstrap allowed for functionality on this feature
-* [ ] Build Custom Component **HTML/LESS/JavaScript**: [Services page tab navigator design](/DesignFiles/Services/tabs)
+* [x] Build Custom Component **HTML/LESS/JavaScript**: [Services page tab navigator design](/DesignFiles/Services/tabs)
 	* [Using the assets provided](/img/services), you must build the tab navigator using your own custom JavaScript component, no libraries allowed on this feature. You are encouraged to use code from previous weeks to accomplish this feature
 
 Once you have accomplished the required MVP features, **reach out to your project manager for approval to work on extra features of your choice**.  This project does not end at MVP.  Try to get as many extra features into your project as you can before the demonstration!
