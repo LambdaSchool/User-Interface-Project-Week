@@ -1,0 +1,140 @@
+.contact-container {
+  max-width: 885px;
+  width: 100%;
+  margin: 0 auto;
+
+  .contact-header {
+    position: relative;
+    padding-top: 40px;
+    width: 100%;
+    height: auto;
+
+    h1 {
+      position: absolute;
+      left: 2%;
+      bottom: 2%;
+      z-index: 2;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      z-index: -1;
+    }
+  }
+
+  .contact-form {
+    background-color: @project-square;
+
+    form {
+      padding: 20px 10px;
+      width: 100%;
+      h4 {
+        .font(@subhead-font; bold);
+      } 
+
+      input, select {
+        margin: 20px 0;
+        width: 50%;
+        height: 42px;
+        font-size: 1.8rem;
+      }
+
+      p{
+        font-size: 1.2rem;
+        margin: -20px 0 20px;
+      }
+    }
+  }
+
+  .contact.tabs {
+    .flex(space-around);
+    padding: 20px 0;
+
+    .contact.tab {
+      .font(@subhead-font; normal);
+      border: 1px solid #000;
+      width: 200px;
+      height: 46px;
+      text-align: center;
+      padding-top: 12px;
+
+      &.tab-selected {
+        background-color: @tab-color;
+        cursor: default;
+      }
+
+      &:not(.tab-selected):hover {
+        background-color: @off-black;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .contact.items {
+    width: 100%;
+    margin-bottom: 40px;
+    max-height: 385px;
+    overflow: hidden;
+
+    .contact.item {
+      display: none;
+
+      &.item-selected {
+        width: 100%;
+        .flex(space-between; center);
+        position: relative;
+
+        .address {
+          width: 100%;
+          position: absolute;
+          left: 25%;
+          z-index: 10;
+
+          address p, a {
+            .font(@subhead-font; normal; 32px);
+            color: #fff;
+            text-shadow: 0 0 8px #000;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .contact-carousel {
+        position: relative;
+        margin: 0 auto;
+
+        .left-button, .right-button {
+          .flex(center, center);
+          position: absolute;
+          font-size: 4rem;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: @project-square;
+          cursor: pointer;
+          z-index: 15;
+        }
+
+        .left-button {
+          top: 50%;
+          left: 20px;
+        }
+        .right-button {
+          top: 50%;
+          right: 20px;
+        }
+        img {
+          display: none;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+
+
+
+
+}

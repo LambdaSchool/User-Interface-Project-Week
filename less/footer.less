@@ -1,0 +1,58 @@
+.footer-container {
+  background-color: #828282;
+  color: #ffffff;
+  height: 200px;
+  padding: 40px 40px 0 40px;
+  
+  .contacts {
+    .flex(space-around, center);
+
+    form {
+      font-size: 1.4rem;
+
+      h4 {
+        .font(@foothead-font; bold);
+        padding-bottom: 10px;
+      }
+
+      input {
+        width: 280px;
+        height: 36px;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .address {
+
+      h4 {
+        .font(@foothead-font; normal; @foothead-line);
+      }
+
+      a {
+        text-decoration: none;
+        .font(@foottext-font; normal; @foottext-line);
+        color: #ffffff;
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+    padding-top: 25px;
+  }
+
+  @media @phone {
+    height: auto;
+
+    .contacts {
+      .flex(space-between, flex-start, column);
+
+      .address {
+        padding-top: 20px;
+      }
+    }
+  }
+}

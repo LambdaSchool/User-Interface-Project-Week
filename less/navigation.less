@@ -1,0 +1,49 @@
+.menu {
+  position: fixed;
+  .flex(space-between);
+  background-color: @lightgray-background;
+  width: 100%;
+  max-width: 885px;
+  padding: 10px 50px;
+  height: 40px;
+  z-index: 15;
+
+  .logo {
+    
+    a {
+      text-decoration: none;
+      .font(@navlogo-font; bold);
+      color: #ffffff;
+    }
+  }
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.nav-links {
+  .flex(center; center; column);
+  position: fixed;
+  width: 100%;
+  max-width: 885px;
+  height: 100vh;
+  background-color: @lightgray-background;
+  overflow: hidden;
+  opacity: 0.8;
+  z-index: 10;
+
+  a {
+    text-decoration: none;
+    .font(@navtext-font; bold; @navtext-line);
+    color: #ffffff;
+
+    &:hover {
+      color: @off-black;
+    }
+  }
+}
+
+.nav-links-hidden {
+  display: none;
+}

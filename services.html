@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Services</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -12,26 +16,125 @@
 
 <body>
 
-	<h1>Services</h1>
+	<div class="service-container">
+		<section class="menu">
+			<div class="logo">
+				<a href="#">S&J</a>
+			</div>
+			<img src="img/nav-hamburger.png" alt="">
+		</section>
+		
+		<div class="nav-links nav-links-hidden">
+			<a href="index.html">Home</a>
+			<a href="#">Services</a>
+			<a href="contact.html">Contact</a>
+		</div>
 
-<!-- Services Content 
-  Services
-  
-  Services include: completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
--->
+		<header class="service-header">
+			<img src="img/services/services-jumbotron.png" alt="">
+			<h1>Services</h1>
+		</header>
 
-<!-- *** NOTE *** Tab Navigator Content: I used the same text for each tab to make it easy, Note that the images and text do change on click but you can just use the same text for each tab element.  All the images should be in the img folder.
+		<section class="service tab-container">
+			<div class="about">
+				<p>Services include: completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+			</div>
 
-  Pre-Construction
-  Construction
-  Design Build
-  Sustainability
+			<div class="service tabs">
+				<div class="service tab tab-selected" data-tab="1"><h2>Pre-Construction</h2></div>
+				<div class="service tab" data-tab="2"><h2>Construction</h2></div>
+				<div class="service tab" data-tab="3"><h2>Design Build</h2></div>
+				<div class="service tab" data-tab="4"><h2>Sustainability</h2></div>
+			</div>
+			<div class="service items">
+				<div class="service item item-selected " data-tab="1">
+					<h2>Pre-construction</h2>
+					<div class="service-item-content">
+						<div class="service-item-text">							
+							<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+							<p>Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+						</div>
+						<img src="img/services/services-tab-pre-construction-img.png">
+					</div>
+				</div>
+				<div class="service item" data-tab="2">
+					<h2>Construction</h2>
+					<div class="service-item-content">
+						<div class="service-item-text">
+							<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+							<p>Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+						</div>
+						<img src="img/services/services-tab-construction-img.png">
+					</div>
+				</div>
+				<div class="service item" data-tab="3">
+					<h2>Design Build</h2>
+					<div class="service-item-content">
+						<div class="service-item-text">							
+							<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+							<p>Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+						</div>
+						<img src="img/services/services-tab-design-build-img.png">
+					</div>
+				</div>
+				<div class="service item" data-tab="4">
+					<h2>Sustainabilty</h2>
+					<div class="service-item-content">
+						<div class="service-item-text">							
+							<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+							<p>Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+						</div>
+						<img src="img/services/services-tab-sustainability-img.png">
+					</div>
+				</div>
+			</div>
+		</section>
 
-  Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.  Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
 
+		<section class="footer-container">
+			<div class="contacts">
+				<form action="#">
+					<h4>
+						Interested in starting a project?<br>  
+						Let’s talk:<br>
+					</h4>
+					<input type="text" placeholder="Enter email"><br>
+					<p>We'll never share your email with anyone else.</p>
+				</form>
+				<div class="address">
+					<h4>New York</h3>
+					<address>
+						<p>123 Lane<br>
+							Suite 100<br>
+							Albany, NY 12345</p>
+					</address>
+					<a href="tel:2025550144">202 555 0144</a>
+				</div>
+				<div class="address">
+					<h4>Florida</h3>
+					<address>
+						<p>Ocean Drive<br>
+							Suite 201<br>
+							Orlando, FL 22345</p>
+					</address>
+					<a href="tel:5025550144">502 555 0144</a>
+				</div>
+				<div class="address">
+					<h4>California</h3>
+					<address>
+						<p>Mountain Street<br>
+							Suite 105<br>
+							San Diego, CA 22345</p>
+					</address>
+					<a href="tel:7025550144">702 555 0144</a>
+				</div>
+			</div>
 
-
--->
+			<footer>
+				Copyright © 2018 Smith and Jones
+			</footer>
+		</section>
+	</div>
 
 	<script src="js/index.js"></script>
 </body>

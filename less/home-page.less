@@ -1,0 +1,171 @@
+.home-container {
+  max-width: 885px;
+  width: 100%;
+  margin: 0 auto;
+  
+  .home-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+
+    h1 {
+      position: absolute;
+      left: 2%;
+      bottom: 2%;
+      z-index: 2;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      top: 0;
+      z-index: -1;
+    }
+  }
+
+  .home-about {
+    margin: 20px 3%;
+
+    .about-container {
+      .flex(space-between);
+      margin-bottom: 40px;
+
+      .home-about-content {
+        padding: 0 2%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+
+        h3, p, button {
+          margin-top: 20px;
+        }
+
+        button {
+          background: none;
+          width: 120px;
+          height: 36px;
+          border: 1px solid #000;
+        }
+      }
+    }
+  }
+
+  .home-projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .home-project {
+      width: 100%;
+      .flex(center);
+      flex-wrap: wrap;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      .home-project-title {
+        .flex(center);
+        width: 25%;
+        position: absolute;
+        right: 0;
+        top: 190px;
+        background: @project-square;
+        z-index: 8;
+        height: 64px;
+
+        h2 {
+          display: block;
+          text-align: center;
+          padding-top: 20px;
+          text-transform: uppercase;
+          font-family: 'Arial';
+          letter-spacing: 3px;
+        }
+      }
+
+      .home-project-content {
+        width: 100%;
+
+        p {
+          padding: 20px 25% ;
+        }
+      }
+    }
+
+    .home-project:nth-of-type(2) {
+
+      .home-project-title{
+        margin-left: 0;
+        left: 0;
+      }
+    }
+  }
+
+  @media @phone {
+    max-width: 500px;
+
+    .home-header {
+      
+      h1 {
+        font-size: 5.0rem;
+      }
+    }
+    
+    .home-about {
+
+      .about-container {
+        .flex(space-between; center; column-reverse);
+
+        &:nth-of-type(2) {
+          .flex(space-between; center; column);
+        }
+
+        .home-about-content {
+        
+          button {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .home-projects {
+      h3 {
+        padding: 10px;
+      }
+
+      .home-project {
+        .flex(center);
+        flex-wrap: wrap;
+
+        &:nth-of-type(2) {
+          position: none;
+          .home-project-title {
+            left: 0;
+          }
+        }
+
+        img {
+          max-width: 100%;
+        }
+
+        .home-project-title {
+          margin-left: 0;
+          width: 80%;
+          .flex(center);
+          
+          h2 {
+            width: 100%;
+          }
+        }
+
+        .home-project-content p {
+          padding: 20px 5%;
+        }
+      }
+    }
+  }
+}
